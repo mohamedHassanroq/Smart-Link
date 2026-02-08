@@ -1,0 +1,48 @@
+.awards__card {
+  border-radius: $radiusOne;
+  border: 1px solid #f1f1f1;
+  @include gradient(
+    180deg,
+    rgba(226, 103, 48, 0.06) 0%,
+    rgba(226, 103, 48, 0) 100%
+  );
+  & .card {
+    &__img {
+      border-radius: $radiusOne;
+      &-content {
+        aspect-ratio: 476 / 388;
+      }
+    }
+    &__title {
+      margin-bottom: 12px;
+      color: $grayOne;
+      font-size: 18px;
+    }
+    &__description {
+      color: $grayTwo;
+      font-size: 14px;
+    }
+  }
+}
+
+.A-C {
+  & .content__description {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+.A-C {
+  & .A-C__heading {
+    padding-bottom: 160px;
+  }
+  & .section-head-centered {
+    @include head-centered(70%);
+  }
+}
+.A-C-video {
+  margin-top: -150px;
+  background-color: #ddd;
+  height: 360px;
+  @include down(lg) {
+    height: 300px;
+  }
+}

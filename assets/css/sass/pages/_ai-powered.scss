@@ -1,0 +1,10 @@
+.hw__content-item {
+  & .about-section {
+    &__image {
+      aspect-ratio: 488 / 373;
+    }
+  }
+  & .content__title {
+    font-size: 18px;
+  }
+}

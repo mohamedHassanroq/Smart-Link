@@ -1,0 +1,19 @@
+.CDP-page {
+  & .section-head-centered {
+    @include head-centered(86%);
+  }
+}
+
+.hsg__item {
+  padding-inline-start: 22px;
+  &::before {
+    content: url("../images/hsg-line.svg");
+    position: absolute;
+    bottom: 0;
+    inset-inline-start: 0;
+    z-index: -1;
+    @include down(md) {
+      display: none;
+    }
+  }
+}

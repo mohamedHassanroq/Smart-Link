@@ -1,0 +1,201 @@
+.header {
+  border: {
+    bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  &__logo {
+    max-width: 150px;
+  }
+  @include down(lg) {
+    & .container {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  &__nav {
+    @include down(lg) {
+      height: 100%;
+      width: 0px;
+      background-color: $secondaryColor;
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      inset-inline-start: 0;
+      overflow: hidden;
+      -webkit-transition: 0.5s ease;
+      -o-transition: 0.5s ease;
+      transition: 0.3s ease;
+      padding-top: 60px;
+      opacity: 0;
+      visibility: hidden;
+      overflow-y: auto;
+    }
+    &.active {
+      width: 100%;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.nav {
+  &__link {
+    @include flex(center, space-between);
+    font-size: 15px;
+    color: $white;
+    text-transform: capitalize;
+    gap: 5px;
+    @include up(lg) {
+      padding-block: 16px;
+    }
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+  &__list {
+    @include between(lg, xl) {
+      gap: 16px !important;
+    }
+    @include down(lg) {
+      padding-inline: 20px;
+    }
+  }
+}
+
+.have-dropdown {
+  & .dropdown {
+    &__toggle {
+      &.active {
+        & .dropdown__arrow {
+          & i {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    &__arrow {
+      font-size: 14px;
+      & i {
+        transition: 0.3s ease;
+      }
+    }
+    &__menu {
+      @include up(lg) {
+        position: absolute;
+        width: 100%;
+        inset-inline: 0;
+        top: 100%;
+        background-color: $secondaryColor;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+        transition: 0.3s ease;
+        padding-top: 32px;
+        padding-bottom: 50px;
+      }
+      @include down(lg) {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.35s ease;
+      }
+    }
+    &__list {
+      @include up(lg) {
+        @include grid(3);
+      }
+      &-link {
+        padding: 12px;
+        border-radius: $radiusOne;
+        &:hover {
+          background-color: rgba($color: $white, $alpha: 0.05);
+        }
+      }
+      &-icon {
+        @include flex(center, center);
+        flex-shrink: 0;
+        width: 25px;
+        height: 25px;
+        @include down(lg) {
+          display: none;
+        }
+      }
+      &-title {
+        font-size: 15px;
+        @include flex(flex-start, space-between);
+        & > i {
+          font-size: 12px;
+          opacity: 0;
+          color: $primaryColor;
+          transition: 0.3s ease;
+          margin-top: 4px;
+        }
+        @include down(lg) {
+          margin-bottom: 0;
+          font-size: 13px;
+        }
+      }
+      &-link {
+        &:hover {
+          & .dropdown__list-title {
+            & > i {
+              opacity: 1;
+            }
+          }
+        }
+        @include down(lg) {
+          padding: 8px;
+        }
+      }
+      &-text {
+        font-size: 12px;
+        @include down(lg) {
+          display: none;
+        }
+      }
+    }
+  }
+  @include up(lg) {
+    &:hover {
+      & .dropdown__arrow {
+        & i {
+          transform: rotate(180deg);
+        }
+      }
+      & .dropdown__menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.menu-bar {
+  @include flex(center, center, column);
+  cursor: pointer;
+  z-index: 9999;
+  margin-inline-start: 15px;
+  @include up(lg) {
+    display: none;
+  }
+  span {
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    background-color: $white;
+    margin: 2px 0;
+    transition: 0.4s;
+  }
+  &.active {
+    span {
+      &:first-child {
+        transform: rotate(-45deg) translate(-6px, 2px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:last-child {
+        transform: rotate(45deg) translate(-6px, -2px);
+      }
+    }
+  }
+}

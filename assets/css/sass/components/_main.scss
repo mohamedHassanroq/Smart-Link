@@ -1,0 +1,36 @@
+.main {
+  &__hero-section {
+    height: 100vh;
+    & .hero-video {
+      height: 100%;
+      background-color: #ddd;
+    }
+    &__text {
+      z-index: 5;
+    }
+    & .hero-section__content {
+      width: 60%;
+      @include down(lg) {
+        width: 100%;
+      }
+      & .content {
+        &__short-title {
+          @include short-title($remove-after: true);
+        }
+        &__long-title {
+          @include long-title(48px);
+          @include down(md) {
+            font-size: 24px;
+          }
+        }
+        &__description {
+          font-size: 16px;
+          color: #f1f1f1;
+          @include down(md) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

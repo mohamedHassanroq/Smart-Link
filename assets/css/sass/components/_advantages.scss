@@ -1,0 +1,71 @@
+$colors: (
+  1: (
+    bg: #e0f0fd,
+    border: #b5deff,
+    pseudo: #68a9de,
+  ),
+  2: (
+    bg: #fff9e9,
+    border: #ffebb5,
+    pseudo: #fbbc12,
+  ),
+  3: (
+    bg: #eaffe0,
+    border: #ccffb5,
+    pseudo: #009247,
+  ),
+  4: (
+    bg: #eedeff,
+    border: #d9b5ff,
+    pseudo: #974de6,
+  ),
+
+  5: (
+    bg: #ffebec,
+    border: #ffb5ba,
+    pseudo: #de5054,
+  ),
+);
+
+.advantages__content-body {
+  @include grid(3);
+  grid-template-rows: repeat(2, auto);
+  gap: 24px;
+  @include down(md) {
+    @include grid(1);
+  }
+}
+
+.advantage__item {
+  padding: 20px;
+  border-radius: $radiusBase;
+  @include up(md) {
+    &:nth-child(2) {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+    }
+  }
+  & .item {
+    &__img {
+      width: fit-content;
+      margin-inline-start: auto;
+    }
+    &__title {
+      padding-inline-start: 0;
+      &::before {
+        margin-inline-start: -21px;
+      }
+    }
+  }
+}
+
+@each $i, $values in $colors {
+  .advantage__item:nth-child(#{$i}) {
+    background-color: map-get($values, bg);
+    border: 1px solid map-get($values, border);
+
+    & .item__title::before {
+      background-color: map-get($values, pseudo);
+    }
+  }
+}

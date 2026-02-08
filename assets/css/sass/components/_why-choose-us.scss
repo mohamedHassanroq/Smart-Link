@@ -1,0 +1,26 @@
+.why__content {
+  border-inline-start: 2px dotted #e3e3e3;
+  padding-block: 10px;
+
+  & .item__title {
+    &::before {
+      inset-inline-start: -2px;
+    }
+  }
+  &-details {
+    padding-inline-start: 12px;
+    & .item__description {
+      font-size: 14px;
+    }
+    & p {
+      font-size: 18px;
+      @include down(lg) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+.why__content-image {
+  aspect-ratio: 415 / 355;
+  border-radius: $radiusTwo;
+}

@@ -1,0 +1,31 @@
+.about-section {
+  &__image {
+    aspect-ratio: 476 / 406;
+    border-radius: $radiusTwo;
+    @include between(md, lg) {
+      aspect-ratio: 476 / 562;
+    }
+    &:hover .video-icon__circle {
+      background-color: $primaryColor;
+    }
+    & > img {
+      border-radius: $radiusTwo;
+    }
+  }
+  & .content__btns {
+    margin-top: 20px;
+  }
+}
+
+.video-icon__circle {
+  font-size: 20px;
+  color: $white;
+  width: 50px;
+  height: 50px;
+  background-color: $primaryColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  transition: 0.3s ease;
+}

@@ -1,0 +1,74 @@
+.work__content-body {
+  @include down(xl) {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    padding-inline-start: 42px;
+  }
+}
+.work-wrapper {
+  padding-top: 180px;
+  padding-bottom: 180px;
+
+  @include down(xl) {
+    min-width: 1016px;
+  }
+}
+
+.work-step {
+  position: relative;
+  flex: 1;
+  @include flex($align: center, $direction: column);
+  .step {
+    &-number {
+      width: 32px;
+      height: 32px;
+      background-color: $primaryColor;
+      font-size: 20px;
+    }
+    &-line {
+      width: 1px;
+      height: 32px;
+      border-inline-start: 1px dashed $primaryColor;
+      position: absolute;
+      top: 100%;
+    }
+    &-text {
+      border-radius: $radiusBase;
+      position: absolute;
+      width: 280px;
+      max-height: 160px;
+      overflow: hidden;
+      top: 100%;
+      margin: 32px 0;
+      @include gradient(
+        180deg,
+        rgba(226, 103, 48, 0.06) 0%,
+        rgba(226, 103, 48, 0) 100%
+      );
+    }
+  }
+  &:nth-child(even) {
+    & .step-line {
+      bottom: 100%;
+      top: auto;
+    }
+    & .step-text {
+      bottom: 100%;
+      top: auto;
+    }
+  }
+  &:not(:last-child) {
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      inset-inline-start: 0;
+      transform: translateX(50%);
+      top: 15px;
+      z-index: -1;
+      border-block-start: 1px dashed $primaryColor;
+    }
+  }
+}

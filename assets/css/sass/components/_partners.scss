@@ -1,0 +1,23 @@
+/*home page horizontal marquee*/
+.partners__content .partner__item {
+  width: 130px;
+}
+
+/*about page vertical marquee*/
+.partners-vertical__wrapper {
+  @include grid(3);
+  height: 335px;
+  max-width: 500px;
+  margin-inline: auto;
+}
+.partners-col {
+  height: 100%;
+  overflow: hidden;
+  & .vertical-marquee-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  & .partner__item {
+    height: 85px;
+  }
+}

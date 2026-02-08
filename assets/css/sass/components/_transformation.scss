@@ -1,0 +1,21 @@
+.digital-transformation {
+  background-image: url("../images/transformation-bg.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+}
+.transformation__content-head {
+  width: 75%;
+}
+.transformation-video {
+  height: 453px;
+  width: 80%;
+  margin-inline: auto;
+  margin-bottom: 200px;
+  @include down(lg) {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 130px;
+  }
+}

@@ -1,0 +1,39 @@
+.eab__content-head,
+.AP__content-head {
+  &.section-head-centered {
+    @include head-centered(75%);
+  }
+}
+
+.RPA-IP__content-head {
+  &.section-head-centered {
+    @include head-centered(70%);
+  }
+}
+
+.rpa__content-item {
+  & .content {
+    &__title {
+      font-size: 18px;
+      padding: 10px 32px;
+      width: max-content;
+      top: 21px;
+      @include down(lg) {
+        font-size: 16px;
+      }
+    }
+    &__list {
+      @include gradient(
+        180deg,
+        rgba(226, 103, 48, 0.06) 0%,
+        rgba(226, 103, 48, 0) 100%
+      );
+    }
+  }
+}
+
+.automated-processes {
+  & .content__description {
+    color: rgba($color: $white, $alpha: 0.8);
+  }
+}

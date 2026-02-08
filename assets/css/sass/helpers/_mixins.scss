@@ -1,0 +1,129 @@
+/// Helper mixins for responsive design using predefined breakpoints
+@mixin up($size) {
+  @media (min-width: bp($size)) {
+    @content;
+  }
+}
+@mixin down($size) {
+  @media (max-width: (bp($size) - 1)) {
+    @content;
+  }
+}
+@mixin between($min, $max) {
+  @media (min-width: bp($min)) and (max-width: bp($max)) {
+    @content;
+  }
+}
+@mixin only($size) {
+  $keys: map-keys($breakpoints);
+  $i: index($keys, $size);
+  $next: nth($keys, $i + 1);
+
+  @if $next {
+    @media (min-width: bp($size)) and (max-width: (bp($next) - 0.02)) {
+      @content;
+    }
+  } @else {
+    @media (min-width: bp($size)) {
+      @content;
+    }
+  }
+}
+
+@mixin head-centered($width: 62%) {
+  text-align: center;
+  width: $width;
+  margin-inline: auto;
+  @include down(lg) {
+    width: 100% !important;
+  }
+  & * {
+    text-align: center;
+  }
+}
+
+@mixin short-title($color: $primaryColor, $remove-after: false) {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  color: $color;
+  text-transform: capitalize;
+  position: relative;
+
+  // SHARED styles for before + after
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    margin: 0 5px;
+    width: 28px;
+    height: 1px;
+    background-color: $color;
+  }
+
+  // AFTER → only include if not removed
+  @if $remove-after == true {
+    &::after {
+      display: none;
+    }
+  }
+}
+// Long title mixin
+@mixin long-title($size: 34px, $color: $secondaryColor) {
+  font-size: $size;
+  font-weight: 600;
+  color: $color;
+  margin-top: 8px;
+}
+
+%button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  height: 45px;
+  min-width: 130px;
+  border-radius: $radiusBase;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+// global Gradient mixin
+@mixin gradient($angle, $colors...) {
+  background: linear-gradient($angle, $colors...);
+
+  // Mirror horizontally for RTL
+  [dir="rtl"] & {
+    background: linear-gradient(calc(360deg - #{$angle}), $colors...);
+  }
+}
+
+// Line clamp mixin
+@mixin line-clamp($lines: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Flex center mixin
+@mixin flex($align: null, $justify: null, $direction: null) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+//grid mixin
+@mixin grid($columns, $gap: 15px) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}

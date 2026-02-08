@@ -1,0 +1,978 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <title>Smart Link</title>
+
+    <!-- FAVICONS ICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon.png"
+    />
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/infinite-marquee.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header py-3 py-lg-0 position-absolute w-100 z-2">
+      <div class="container">
+        <div
+          class="header__content d-flex align-items-center justify-content-between gap-3"
+        >
+          <!-- logo -->
+          <div class="header__logo">
+            <a href="./index.html" class="logo__anchor">
+              <img
+                src="./assets/images/logo.svg"
+                alt="logo"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <!-- logo end -->
+
+          <!-- nav -->
+          <nav class="header__nav">
+            <ul class="nav__list fix-ul d-flex flex-column flex-lg-row gap-4">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link fix-anchor">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="./about.html" class="nav__link fix-anchor">About </a>
+              </li>
+              <li class="nav__item have-dropdown">
+                <a href="#" class="nav__link dropdown__toggle fix-anchor"
+                  >Solutions
+                  <span class="dropdown__arrow"
+                    ><i class="las la-angle-down"></i></span
+                ></a>
+                <div class="dropdown__menu">
+                  <div class="container">
+                    <ul class="dropdown__list fix-ul">
+                      <li class="dropdown__list-item">
+                        <a
+                          href="./Contact-Center.html"
+                          class="dropdown__list-link fix-anchor d-flex gap-2 text-white"
+                        >
+                          <span class="dropdown__list-icon">
+                            <img
+                              src="./assets/images/icons/header-dropdown/01.svg"
+                              alt="icon"
+                            />
+                          </span>
+                          <div class="dropdown__list-content">
+                            <h5 class="dropdown__list-title">
+                              Contact Centers
+                              <i class="las la-angle-right"></i>
+                            </h5>
+                            <p class="dropdown__list-text">
+                              Efficient customer communication through phone and
+                              digital channels.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a
+                          href="./Business-Process-Outsourcing.html"
+                          class="dropdown__list-link fix-anchor d-flex gap-2 text-white"
+                        >
+                          <span class="dropdown__list-icon">
+                            <img
+                              src="./assets/images/icons/header-dropdown/02.svg"
+                              alt="icon"
+                            />
+                          </span>
+                          <div class="dropdown__list-content">
+                            <h5 class="dropdown__list-title">
+                              Business Process Outsourcing (BPO)
+                              <i class="las la-angle-right"></i>
+                            </h5>
+                            <p class="dropdown__list-text">
+                              Outsourced business operations to reduce cost and
+                              improve quality.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a
+                          href="#"
+                          class="dropdown__list-link fix-anchor d-flex gap-2 text-white"
+                        >
+                          <span class="dropdown__list-icon">
+                            <img
+                              src="./assets/images/icons/header-dropdown/03.svg"
+                              alt="icon"
+                            />
+                          </span>
+                          <div class="dropdown__list-content">
+                            <h5 class="dropdown__list-title">
+                              Operational Excellence
+                              <i class="las la-angle-right"></i>
+                            </h5>
+                            <p class="dropdown__list-text">
+                              Optimizing internal processes to improve
+                              efficiency and performance quality.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a
+                          href="./AI-Powered-Customer-Experience-Solutions.html"
+                          class="dropdown__list-link fix-anchor d-flex gap-2 text-white"
+                        >
+                          <span class="dropdown__list-icon">
+                            <img
+                              src="./assets/images/icons/header-dropdown/04.svg"
+                              alt="icon"
+                            />
+                          </span>
+                          <div class="dropdown__list-content">
+                            <h5 class="dropdown__list-title">
+                              AI-Powered Customer Experience Solutions
+                              <i class="las la-angle-right"></i>
+                            </h5>
+                            <p class="dropdown__list-text">
+                              Using AI to enhance the speed and quality of
+                              customer interactions.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a
+                          href="#"
+                          class="dropdown__list-link fix-anchor d-flex gap-2 text-white"
+                        >
+                          <span class="dropdown__list-icon">
+                            <img
+                              src="./assets/images/icons/header-dropdown/05.svg"
+                              alt="icon"
+                            />
+                          </span>
+                          <div class="dropdown__list-content">
+                            <h5 class="dropdown__list-title">
+                              Customer Experience Optimization & Consulting
+                              <i class="las la-angle-right"></i>
+                            </h5>
+                            <p class="dropdown__list-text">
+                              Enhancing customer experience through journey
+                              analysis and targeted improvements.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a
+                          href="#"
+                          class="dropdown__list-link fix-anchor d-flex gap-2 text-white"
+                        >
+                          <span class="dropdown__list-icon">
+                            <img
+                              src="./assets/images/icons/header-dropdown/06.svg"
+                              alt="icon"
+                            />
+                          </span>
+                          <div class="dropdown__list-content">
+                            <h5 class="dropdown__list-title">
+                              Recruitment, Training & Workforce Management
+                              <i class="las la-angle-right"></i>
+                            </h5>
+                            <p class="dropdown__list-text">
+                              Hiring, training, and managing workforce
+                              performance.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a
+                          href="#"
+                          class="dropdown__list-link fix-anchor d-flex gap-2 text-white"
+                        >
+                          <span class="dropdown__list-icon">
+                            <img
+                              src="./assets/images/icons/header-dropdown/07.svg"
+                              alt="icon"
+                            />
+                          </span>
+                          <div class="dropdown__list-content">
+                            <h5 class="dropdown__list-title">
+                              Industry-Specific Technology Solutions
+                              <i class="las la-angle-right"></i>
+                            </h5>
+                            <p class="dropdown__list-text">
+                              Delivering tailored technology solutions to meet
+                              the unique needs of each industry.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a
+                          href="#"
+                          class="dropdown__list-link fix-anchor d-flex gap-2 text-white"
+                        >
+                          <span class="dropdown__list-icon">
+                            <img
+                              src="./assets/images/icons/header-dropdown/07.svg"
+                              alt="icon"
+                            />
+                          </span>
+                          <div class="dropdown__list-content">
+                            <h5 class="dropdown__list-title">
+                              IT Infrastructure and Technical Support
+                              <i class="las la-angle-right"></i>
+                            </h5>
+                            <p class="dropdown__list-text">
+                              Supporting and maintaining IT systems to ensure
+                              stable and reliable operations.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item have-dropdown">
+                <a href="#" class="nav__link dropdown__toggle fix-anchor"
+                  >Services
+                  <span class="dropdown__arrow"
+                    ><i class="las la-angle-down"></i></span
+                ></a>
+                <div class="dropdown__menu">
+                  <div class="container">
+                    <ul class="dropdown__list fix-ul">
+                      <li class="dropdown__list-item">
+                        <a
+                          href="./Artificial-Intelligence-Solutions.html"
+                          class="dropdown__list-link fix-anchor d-flex gap-2 text-white"
+                        >
+                          <span class="dropdown__list-icon">
+                            <img
+                              src="./assets/images/icons/header-dropdown/08.svg"
+                              alt="icon"
+                            />
+                          </span>
+                          <div class="dropdown__list-content">
+                            <h5 class="dropdown__list-title">
+                              Artificial Intelligence Solutions
+                              <i class="las la-angle-right"></i>
+                            </h5>
+                            <p class="dropdown__list-text">
+                              Smart tools that help your business work faster,
+                              smarter, and with less effort.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a
+                          href="./Robotic-Process-Automation.html"
+                          class="dropdown__list-link fix-anchor d-flex gap-2 text-white"
+                        >
+                          <span class="dropdown__list-icon">
+                            <img
+                              src="./assets/images/icons/header-dropdown/09.svg"
+                              alt="icon"
+                            />
+                          </span>
+                          <div class="dropdown__list-content">
+                            <h5 class="dropdown__list-title">
+                              Robotic Process Automation (RPA)
+                              <i class="las la-angle-right"></i>
+                            </h5>
+                            <p class="dropdown__list-text">
+                              Automates routine tasks so your team can focus on
+                              more important work.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a
+                          href="./Cybersecurity-Data-Protection.html"
+                          class="dropdown__list-link fix-anchor d-flex gap-2 text-white"
+                        >
+                          <span class="dropdown__list-icon">
+                            <img
+                              src="./assets/images/icons/header-dropdown/10.svg"
+                              alt="icon"
+                            />
+                          </span>
+                          <div class="dropdown__list-content">
+                            <h5 class="dropdown__list-title">
+                              Cybersecurity & Data Protection
+                              <i class="las la-angle-right"></i>
+                            </h5>
+                            <p class="dropdown__list-text">
+                              Keeps your data safe and protects your business
+                              from digital threats.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a
+                          href="Microsoft-Dynamics-365.html"
+                          class="dropdown__list-link fix-anchor d-flex gap-2 text-white"
+                        >
+                          <span class="dropdown__list-icon">
+                            <img
+                              src="./assets/images/icons/header-dropdown/11.svg"
+                              alt="icon"
+                            />
+                          </span>
+                          <div class="dropdown__list-content">
+                            <h5 class="dropdown__list-title">
+                              Microsoft Dynamics 365
+                              <i class="las la-angle-right"></i>
+                            </h5>
+                            <p class="dropdown__list-text">
+                              All-in-one business solutions to manage sales,
+                              customers, and operations easily.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a
+                          href="./ERP-Systems.html"
+                          class="dropdown__list-link fix-anchor d-flex gap-2 text-white"
+                        >
+                          <span class="dropdown__list-icon">
+                            <img
+                              src="./assets/images/icons/header-dropdown/12.svg"
+                              alt="icon"
+                            />
+                          </span>
+                          <div class="dropdown__list-content">
+                            <h5 class="dropdown__list-title">
+                              ERP Systems
+                              <i class="las la-angle-right"></i>
+                            </h5>
+                            <p class="dropdown__list-text">
+                              One system to manage all your core business
+                              processes smoothly and efficiently.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a
+                          href="#"
+                          class="dropdown__list-link fix-anchor d-flex gap-2 text-white"
+                        >
+                          <span class="dropdown__list-icon">
+                            <img
+                              src="./assets/images/icons/header-dropdown/14.svg"
+                              alt="icon"
+                            />
+                          </span>
+                          <div class="dropdown__list-content">
+                            <h5 class="dropdown__list-title">
+                              Risk & Compliance Management
+                              <i class="las la-angle-right"></i>
+                            </h5>
+                            <p class="dropdown__list-text">
+                              Helps your business stay compliant, reduce risks,
+                              and operate with confidence.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a
+                          href="./Data-Analytics-Business-Intelligence.html"
+                          class="dropdown__list-link fix-anchor d-flex gap-2 text-white"
+                        >
+                          <span class="dropdown__list-icon">
+                            <img
+                              src="./assets/images/icons/header-dropdown/13.svg"
+                              alt="icon"
+                            />
+                          </span>
+                          <div class="dropdown__list-content">
+                            <h5 class="dropdown__list-title">
+                              Data Analytics & Business Intelligence
+                              <i class="las la-angle-right"></i>
+                            </h5>
+                            <p class="dropdown__list-text">
+                              Clear reports and insights that help you
+                              understand your data and make better decisions.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a href="./Our-Clients.html" class="nav__link fix-anchor"
+                  >Our Clients</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="./Awards.html" class="nav__link fix-anchor">Awards</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link fix-anchor">News</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link fix-anchor">Employment</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link fix-anchor">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- nav end -->
+
+          <!-- nav tools -->
+          <div class="nav-tools d-flex">
+            <div class="nav-tools__language text-white">
+              <a
+                href="#"
+                class="language__link fix-anchor d-flex align-items-center gap-1"
+              >
+                <i class="las la-language fs-4"></i>
+                <span class="language__name d-inline-block">AR</span>
+              </a>
+            </div>
+            <div class="menu-bar">
+              <span class="bar1"></span>
+              <span class="bar2"></span>
+              <span class="bar3"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <div class="RPA-page">
+      <!-- page head -->
+      <div
+        class="page-head overlay"
+        style="--page-head-bg: url(&quot;../images/rpa-head-bg.jpg&quot;)"
+      >
+        <div class="page-head-content position-relative z-1">
+          <!-- breadcrumbs -->
+          <div class="breadcrumbs d-flex align-items-end">
+            <div class="container">
+              <div class="breadcrumbs__content" aria-label="breadcrumb">
+                <ul class="breadcrumb fix-ul d-flex align-items-center">
+                  <li class="breadcrumb-item d-flex">
+                    <a href="#" class="breadcrumb__link fix-anchor"
+                      ><img src="./assets/images/icons/home.svg" alt="icon"
+                    /></a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="#" class="breadcrumb__link fix-anchor">Services</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Robotic Process Automation (RPA)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- breadcrumbs end -->
+          <!-- about section -->
+          <div class="about-section">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <div class="about-section__content">
+                    <h1 class="content__long-title text-white">
+                      Automate over 70% of your operations with RPA
+                    </h1>
+                    <p class="content__description">
+                      Digital transformation begins when organizations rethink
+                      how they manage daily tasks. With technological
+                      advancements, companies can automate routine tasks
+                      efficiently. Smart Link’s automation solutions handle
+                      repetitive tasks using reliable, integrated systems.
+                      Robotic Process Automation (RPA) helps teams save time and
+                      focus on valuable work, boosting overall productivity.
+                    </p>
+                    <div class="content__btns">
+                      <a href="#" class="content__btn primary-btn"
+                        >Contact us</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- about section end -->
+        </div>
+      </div>
+      <div class="content" id="content">
+        <!-- Empact of Automation on Business -->
+        <section class="eab-section section-padding">
+          <div class="container">
+            <div class="eab__content">
+              <div class="eab__content-head section-head-centered">
+                <span class="content__short-title">
+                  Empact of Automation on Business</span
+                >
+                <h2 class="content__long-title">
+                  Why is automation the starting point of digital transformation
+                  for your business
+                </h2>
+                <p class="content__description">
+                  Real change does not begin by replacing systems, but by
+                  rethinking how daily work is performed. When routine tasks
+                  shift from manual execution to automated processes through
+                  Robotic Process Automation (RPA), businesses gain more
+                  accurate data, teams become more productive with higher
+                  quality output, and decisions are made faster and more
+                  effectively.
+                </p>
+              </div>
+
+              <div class="hw__content-body">
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <div class="rpa__content-item">
+                      <h2
+                        class="content__title primary-bg text-white fw-medium rounded-pill mx-auto position-relative mb-0"
+                      >
+                        Befor Automation
+                      </h2>
+                      <ul class="content__list fix-ul rounded-4 p-3 pt-5">
+                        <li class="list__item">
+                          Daily tasks are performed manually and repeated
+                          continuously
+                        </li>
+                        <li class="list__item">
+                          Significant time is spent on data entry, review, and
+                          follow-up
+                        </li>
+                        <li class="list__item">High risk of human errors</li>
+                        <li class="list__item">
+                          Process bottlenecks and delays in execution
+                        </li>
+                        <li class="list__item">
+                          Teams focused on execution instead of analysis
+                        </li>
+                        <li class="list__item">
+                          Decisions based on outdated data
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="rpa__content-item">
+                      <h2
+                        class="content__title primary-bg text-white fw-medium rounded-pill mx-auto position-relative mb-0"
+                      >
+                        After Automation
+                      </h2>
+                      <ul class="content__list fix-ul rounded-4 p-3 pt-5">
+                        <li class="list__item">
+                          Processes are executed automatically with no manual
+                          intervention
+                        </li>
+                        <li class="list__item">
+                          Tasks are completed faster and with higher efficiency
+                        </li>
+                        <li class="list__item">
+                          Accurate data that is continuously updated
+                        </li>
+                        <li class="list__item">
+                          Smooth workflows and faster execution
+                        </li>
+                        <li class="list__item">
+                          Teams focus on analysis and decision-making
+                        </li>
+                        <li class="list__item">
+                          Faster decisions based on accurate data, analyzed
+                          using modern technologies to provide insights that
+                          support informed and correct decision-making
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Automated Processes -->
+        <section
+          class="automated-processes secondary-bg section-padding shape-top-left"
+        >
+          <div class="container">
+            <div class="AP__content">
+              <div class="AP__content-head section-head-centered">
+                <span class="content__short-title"> Automated Processes</span>
+                <h2 class="content__long-title text-white">
+                  Real-World Examples of Processes Already Automated in
+                  Companies and Organizations
+                </h2>
+                <p class="content__description">
+                  Routine tasks consume time and resources, increasing the risk
+                  of errors, delays, and inaccurate data, which can lead to
+                  missed opportunities and hinder business growth. Automating
+                  these tasks can improve efficiency and decision-making.
+                </p>
+              </div>
+              <div class="AP__content-body mt-4">
+                <div class="row g-3">
+                  <div class="col-lg-4 col-md-6 d-flex h-auto">
+                    <div class="benefit__item d-flex gap-2 text-white w-100">
+                      <span class="item__icon flex-shrink-0">
+                        <img
+                          src="./assets/images/icons/checkmark-white.svg"
+                          alt="icon"
+                        />
+                      </span>
+                      <div class="item__info mt-1">
+                        <h3 class="item__title fs-6">Customer Requests</h3>
+                        <p class="item__description mt-0 mb-0">
+                          Logging and processing requests without delays.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex h-auto">
+                    <div class="benefit__item d-flex gap-2 text-white w-100">
+                      <span class="item__icon flex-shrink-0">
+                        <img
+                          src="./assets/images/icons/checkmark-white.svg"
+                          alt="icon"
+                        />
+                      </span>
+                      <div class="item__info mt-1">
+                        <h3 class="item__title fs-6">Reporting</h3>
+                        <p class="item__description mt-0 mb-0">
+                          Ready-to-use reports generated and delivered
+                          automatically.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex h-auto">
+                    <div class="benefit__item d-flex gap-2 text-white w-100">
+                      <span class="item__icon flex-shrink-0">
+                        <img
+                          src="./assets/images/icons/checkmark-white.svg"
+                          alt="icon"
+                        />
+                      </span>
+                      <div class="item__info mt-1">
+                        <h3 class="item__title fs-6">
+                          Human Resources Operations
+                        </h3>
+                        <p class="item__description mt-0 mb-0">
+                          Automation of daily employee-related processes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex h-auto">
+                    <div class="benefit__item d-flex gap-2 text-white w-100">
+                      <span class="item__icon flex-shrink-0">
+                        <img
+                          src="./assets/images/icons/checkmark-white.svg"
+                          alt="icon"
+                        />
+                      </span>
+                      <div class="item__info mt-1">
+                        <h3 class="item__title fs-6">Invoice Processing</h3>
+                        <p class="item__description mt-0 mb-0">
+                          Accurate recording and review of financial
+                          transactions.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex h-auto">
+                    <div class="benefit__item d-flex gap-2 text-white w-100">
+                      <span class="item__icon flex-shrink-0">
+                        <img
+                          src="./assets/images/icons/checkmark-white.svg"
+                          alt="icon"
+                        />
+                      </span>
+                      <div class="item__info mt-1">
+                        <h3 class="item__title fs-6">Data Entry</h3>
+                        <p class="item__description mt-0 mb-0">
+                          Automatic transfer and update of data across systems.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex h-auto">
+                    <div class="benefit__item d-flex gap-2 text-white w-100">
+                      <span class="item__icon flex-shrink-0">
+                        <img
+                          src="./assets/images/icons/checkmark-white.svg"
+                          alt="icon"
+                        />
+                      </span>
+                      <div class="item__info mt-1">
+                        <h3 class="item__title fs-6">
+                          Human Resources Operations
+                        </h3>
+                        <p class="item__description mt-0 mb-0">
+                          Automation of daily employee-related processes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Automated Processes end -->
+
+        <!-- Our RPA Implementation Process -->
+        <section class="RPA-IP section-padding">
+          <div class="container">
+            <div class="RPA-IP__content">
+              <div class="RPA-IP__content-head section-head-centered">
+                <span class="content__short-title">
+                  Our RPA Implementation Process</span
+                >
+                <h2 class="content__long-title">
+                  How do we implement Robotic Process Automation at SmartLink?
+                </h2>
+                <p class="content__description">
+                  At Smart Link, we follow a clear and well-structured approach
+                  that ensures successful automation and delivers measurable
+                  results from the early stages, without disrupting business
+                  continuity or impacting existing systems.
+                </p>
+              </div>
+              <div class="work__content-body mt-4">
+                <div class="work-wrapper d-flex">
+                  <div class="work-step">
+                    <span
+                      class="step-number d-flex align-items-center justify-content-center flex-shrink-0 rounded-circle text-white fw-medium"
+                      >1</span
+                    >
+                    <span class="step-line d-inline-block"></span>
+                    <div class="step-text p-3">
+                      <h3 class="step-title fs-6">
+                        Understanding the Work’s Nature
+                      </h3>
+                      <p class="step-description mb-0">
+                        We assess your company’s nature, daily operations, and
+                        workload to identify tasks that can be efficiently
+                        outsourced without shifting unsuitable responsibilities.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="work-step">
+                    <span
+                      class="step-number d-flex align-items-center justify-content-center flex-shrink-0 rounded-circle text-white fw-medium"
+                      >2</span
+                    >
+                    <span class="step-line d-inline-block"></span>
+                    <div class="step-text p-3">
+                      <h3 class="step-title fs-6">
+                        Identifying Outsourceable Tasks
+                      </h3>
+                      <p class="step-description mb-0">
+                        We clearly define outsourced tasks, responsibilities,
+                        boundaries, and communication channels before execution
+                        begins.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="work-step">
+                    <span
+                      class="step-number d-flex align-items-center justify-content-center flex-shrink-0 rounded-circle text-white fw-medium"
+                      >3</span
+                    >
+                    <span class="step-line d-inline-block"></span>
+                    <div class="step-text p-3">
+                      <h3 class="step-title fs-6">
+                        Identifying Outsourceable Tasks
+                      </h3>
+                      <p class="step-description mb-0">
+                        We clearly define outsourced tasks, responsibilities,
+                        boundaries, and communication channels before execution
+                        begins.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="work-step">
+                    <span
+                      class="step-number d-flex align-items-center justify-content-center flex-shrink-0 rounded-circle text-white fw-medium"
+                      >4</span
+                    >
+                    <span class="step-line d-inline-block"></span>
+                    <div class="step-text p-3">
+                      <h3 class="step-title fs-6">
+                        Identifying Outsourceable Tasks
+                      </h3>
+                      <p class="step-description mb-0">
+                        We clearly define outsourced tasks, responsibilities,
+                        boundaries, and communication channels before execution
+                        begins.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="work-step">
+                    <span
+                      class="step-number d-flex align-items-center justify-content-center flex-shrink-0 rounded-circle text-white fw-medium"
+                      >5</span
+                    >
+                    <span class="step-line d-inline-block"></span>
+                    <div class="step-text p-3">
+                      <h3 class="step-title fs-6">
+                        Identifying Outsourceable Tasks
+                      </h3>
+                      <p class="step-description mb-0">
+                        We clearly define outsourced tasks, responsibilities,
+                        boundaries, and communication channels before execution
+                        begins.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Our RPA Implementation Process end -->
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="contact text-center rounded-2 mx-auto">
+            <h3 class="contact__title text-white px-3 px-lg-5">
+              Enhance Your Contact Centers with SmartLink
+            </h3>
+            <p class="contact__description text-white mt-3">
+              Smart Link delivers integrated, tech-driven solutions that improve
+              service quality and customer experience, supported by AI,
+              automation, and advanced enterprise technologies.
+            </p>
+            <a href="#" class="contact-us__btn secondery-btn">Contact us </a>
+          </div>
+          <ul
+            class="footer__list fix-ul d-flex gap-4 justify-content-center flex-wrap text-capitalize"
+          >
+            <li class="footer__list-item">
+              <a href="./index.html" class="footer__list-link fix-anchor"
+                >Home</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a href="./about.html" class="footer__list-link fix-anchor"
+                >About us</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a
+                href="./Contact-Center.html"
+                class="footer__list-link fix-anchor"
+                >Contact Center</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a
+                href="./Business-Process-Outsourcing.html"
+                class="footer__list-link fix-anchor"
+                >BPO</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link fix-anchor"
+                >Digital Transformation</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link fix-anchor">Industries</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link fix-anchor">News</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link fix-anchor">Contacts</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link fix-anchor"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+          <div class="footer__logo mx-auto text-center mt-4">
+            <a href="./index.html" class="logo__anchor">
+              <img
+                src="./assets/images/logo.svg"
+                alt="logo"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="social-media mt-4">
+            <ul
+              class="socials__list fix-ul d-flex justify-content-center gap-3"
+            >
+              <li class="socials__list-item">
+                <a href="#" class="socials__list-link fix-anchor">
+                  <i class="lab la-facebook-f"></i>
+                </a>
+              </li>
+              <li class="socials__list-item">
+                <a href="#" class="socials__list-link fix-anchor">
+                  <i class="lab la-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="socials__list-item">
+                <a href="#" class="socials__list-link fix-anchor">
+                  <i class="lab la-twitter"></i>
+                </a>
+              </li>
+              <li class="socials__list-item">
+                <a href="#" class="socials__list-link fix-anchor">
+                  <i class="lab la-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright mt-5">
+        <div class="container">
+          <p class="copyright__text text-white fix-p py-4 text-center">
+            Copyright © 2025 SmartLink, All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- SCRIPTS -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/infinite-marquee.bundle.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+$sectors: (
+  1: (
+    bg: #fff0f8,
+    pseudo: #f92596,
+    icon: #ffd7ec,
+  ),
+  2: (
+    bg: #eef6fb,
+    pseudo: #1fa9f3,
+    icon: #cfeeff,
+  ),
+  3: (
+    bg: #fffaef,
+    pseudo: #f3a21f,
+    icon: #ffeccd,
+  ),
+  4: (
+    bg: #f1fbff,
+    pseudo: #39c0fa,
+    icon: #d5f9ff,
+  ),
+  5: (
+    bg: #f7f3ff,
+    pseudo: #8f5dbf,
+    icon: #ebd7ff,
+  ),
+  6: (
+    bg: #eefbf5,
+    pseudo: #0bae80,
+    icon: #cefff1,
+  ),
+);
+
+.organization {
+  & .content__description {
+    margin-inline-start: 80px;
+    margin-top: 35px;
+    @include down(lg) {
+      margin-inline-start: 0;
+    }
+  }
+}
+
+.sector__card {
+  & .card__icon {
+    top: -2px;
+    inset-inline-end: -2px;
+  }
+  padding: 20px;
+  &::before {
+    content: "";
+    width: 2px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    inset-inline-start: 0;
+  }
+  .card__img {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@each $i, $values in $sectors {
+  .sector__card-container[data-num="#{$i}"] .sector__card {
+    background-color: map-get($values, bg);
+
+    &::before {
+      background-color: map-get($values, pseudo);
+    }
+
+    .card__img {
+      background: linear-gradient(
+        43deg,
+        #fff 3.34%,
+        #{map-get($values, icon)} 94.44%
+      );
+    }
+  }
+}

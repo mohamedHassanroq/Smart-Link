@@ -1,0 +1,31 @@
+// font family
+$fontFamily: "IBM Plex Sans Arabic", sans-serif;
+
+$darkBlue: #1e2334;
+$grayOne: #474444;
+$grayTwo: #7e8082;
+$orange: #df5832;
+$yellow: #e88b2a;
+$lightOrange: #e26730;
+$white: #ffffff;
+$black: #000000;
+
+$primaryColor: $lightOrange;
+$primaryColorHover: $yellow;
+$secondaryColor: $darkBlue;
+$textColor: $grayOne;
+$bodyBgColor: $white;
+$radiusBase: 8px;
+$radiusOne: $radiusBase * 1.5; // 12px
+$radiusTwo: $radiusBase * 3; // 24px
+$radiusThree: $radiusBase * 6; // 48px
+
+// breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);

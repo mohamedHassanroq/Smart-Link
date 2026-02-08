@@ -1,0 +1,44 @@
+.news-video {
+  background-color: #ddd;
+  height: 360px;
+  @include down(lg) {
+    height: 300px;
+  }
+}
+
+.news__card {
+  border-radius: $radiusOne;
+  border: 1px solid #f1f1f1;
+  background: rgba(227, 227, 227, 0.05);
+  backdrop-filter: blur(20.299999237060547px);
+  & .card {
+    &__img {
+      border-radius: $radiusOne;
+      &-content {
+        aspect-ratio: 305 / 201;
+      }
+    }
+    &__title {
+      margin-bottom: 12px;
+      &-link {
+        color: $grayOne;
+        font-size: 18px;
+        @include line-clamp;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+    &__description {
+      color: $grayTwo;
+      font-size: 14px;
+      @include line-clamp;
+    }
+    &__link {
+      & .link__icon {
+        font-size: 18px;
+        animation: arrow 1.1s infinite;
+      }
+    }
+  }
+}

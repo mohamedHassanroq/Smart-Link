@@ -1,0 +1,29 @@
+.trusted-quality {
+  & .steps-path {
+    top: 25px;
+    @include up(lg) {
+      width: 585px;
+    }
+    @include up(xl) {
+      width: 710px;
+    }
+    @include up(xxl) {
+      width: 832px;
+    }
+  }
+  & .trusted__item {
+    & .item__number {
+      width: 49px;
+      height: 49px;
+    }
+    & .item__img {
+      width: 56px;
+      height: 56px;
+    }
+    & .item__title {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

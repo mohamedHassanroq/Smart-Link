@@ -1,0 +1,25 @@
+//what we offer
+.what-we-offer {
+  & .swiper-slide {
+    height: auto;
+    display: flex;
+  }
+  & .head-container {
+    padding-bottom: 100px;
+  }
+  .services__content-body {
+    top: -80px;
+    z-index: 2;
+    & .service__item {
+      border-inline-start: 0;
+      padding: 20px;
+      border: 2px solid #f8f8f8;
+      border-radius: $radiusOne;
+      & .item__title {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}

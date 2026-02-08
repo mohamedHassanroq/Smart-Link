@@ -1,0 +1,18 @@
+/*tabs*/
+.custom-tabs .nav-link {
+  color: $grayOne;
+  padding: 10px 13px;
+  min-width: 120px;
+  border: 1px solid rgba(71, 68, 68, 0.05);
+}
+.custom-tabs .nav-link.active {
+  color: $white;
+  background-color: $primaryColor;
+  border-color: $primaryColor;
+}
+.custom-tabs .nav-link.active .tab-icon {
+  filter: brightness(0) invert(1);
+}
+.clients-marquee .clients__item {
+  width: 130px;
+}

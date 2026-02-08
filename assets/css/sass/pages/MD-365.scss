@@ -1,0 +1,7 @@
+.MD_365-page {
+  & .BPO-Benefits {
+    & .section-head-centered {
+      @include head-centered(58%);
+    }
+  }
+}

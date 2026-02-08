@@ -1,0 +1,22 @@
+.services__content-body {
+  & .service__item {
+    border-inline-start: 1px dotted #e3e3e3;
+    padding: 1px;
+    padding-inline-start: 16px;
+    & .item__img {
+      width: 56px;
+      height: 56px;
+      box-shadow: 0 1.167px 2.333px 0 rgba(0, 0, 0, 0.06),
+        0 0 0 1.167px rgba(0, 0, 0, 0.06);
+      border-radius: $radiusOne;
+    }
+    & .item__title {
+      &::before {
+        inset-inline-start: -17.5px;
+      }
+    }
+    & .item__description {
+      font-size: 14px;
+    }
+  }
+}

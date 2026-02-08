@@ -1,0 +1,39 @@
+@import "sass/helpers/variables";
+@import "sass/helpers/mixins";
+@import "sass/helpers/functions";
+
+@import "sass/base/typography";
+@import "sass/base/reset";
+
+@import "sass/layout/header";
+@import "sass/layout/footer";
+
+@import "sass/components/main";
+@import "sass/components/partners";
+@import "sass/components/about";
+@import "sass/components/trusted-quality";
+@import "sass/components/solutions";
+@import "sass/components/services";
+@import "sass/components/organization";
+@import "sass/components/awards";
+@import "sass/components/news";
+@import "sass/components/team";
+@import "sass/components/transformation";
+@import "sass/components/page-head";
+@import "sass/components/identity";
+@import "sass/components/statistics";
+@import "sass/components/why-choose-us";
+@import "sass/components/what-we-offer";
+@import "sass/components/advantages";
+@import "sass/components/benefits";
+@import "sass/components/how-we-work";
+
+@import "sass/pages/contact-center";
+@import "sass/pages/ai-powered";
+@import "sass/pages/AIS";
+@import "sass/pages/RPA";
+@import "sass/pages/DA-BI";
+@import "sass/pages/CDP";
+@import "sass/pages/MD-365.scss";
+@import "sass/pages/clients";
+@import "sass/pages/awards";

@@ -1,0 +1,12 @@
+.why-smartlink__item {
+  @include gradient(
+    180deg,
+    rgba(226, 103, 48, 0.06) 0%,
+    rgba(226, 103, 48, 0) 100%
+  );
+  border-radius: $radiusBase;
+  &::before {
+    @extend %line;
+    height: 44px;
+  }
+}
