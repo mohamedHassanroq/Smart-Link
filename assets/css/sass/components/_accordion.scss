@@ -1,0 +1,43 @@
+.accordion {
+  &-item {
+    border: none;
+    border-radius: 14px !important;
+    overflow: hidden;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    &:first-of-type .accordion-button,
+    &:last-of-type .accordion-button {
+      border-radius: 0 !important;
+    }
+  }
+  &-button {
+    font-size: 16px;
+    font-weight: 500;
+    color: $secondaryColor;
+    background-color: rgba(138, 157, 174, 0.05);
+    &:not(.collapsed) {
+      background-color: rgba(138, 157, 174, 0.05);
+      color: $secondaryColor;
+      box-shadow: none;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+    &::after {
+      display: none;
+    }
+    @include down(sm) {
+      font-size: 14px;
+    }
+  }
+  &-body {
+    font-size: 14px;
+    color: $textColor;
+    background-color: rgba(138, 157, 174, 0.05);
+    padding-top: 0;
+    @include down(sm) {
+      font-size: 12px;
+    }
+  }
+}

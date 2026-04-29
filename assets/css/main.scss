@@ -8,6 +8,7 @@
 @import "sass/layout/header";
 @import "sass/layout/footer";
 
+@import "sass/components/paginations";
 @import "sass/components/main";
 @import "sass/components/partners";
 @import "sass/components/about";
@@ -27,6 +28,8 @@
 @import "sass/components/advantages";
 @import "sass/components/benefits";
 @import "sass/components/how-we-work";
+@import "sass/components/accordion";
+@import "sass/components/modal";
 
 @import "sass/pages/contact-center";
 @import "sass/pages/ai-powered";
@@ -34,6 +37,8 @@
 @import "sass/pages/RPA";
 @import "sass/pages/DA-BI";
 @import "sass/pages/CDP";
-@import "sass/pages/MD-365.scss";
 @import "sass/pages/clients";
 @import "sass/pages/awards";
+@import "sass/pages/single-page";
+@import "sass/pages/contact-us";
+@import "sass/pages/employment";

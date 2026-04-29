@@ -1,0 +1,53 @@
+.job-card {
+  border: 1px solid #f1f1f1;
+  background: #fdfdfd;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  &.active {
+    border-color: $primaryColorHover;
+    background: rgba(226, 103, 48, 0.05);
+  }
+  &__img {
+    width: 60px;
+    height: 60px;
+    border-radius: $radiusOne;
+    overflow: hidden;
+  }
+  &__title {
+    font-size: 18px;
+  }
+  &__description {
+    color: $grayTwo;
+    @include line-clamp(2);
+  }
+}
+
+.job-details-view {
+  border: 1px solid #f1f1f1;
+  & .job {
+    &__img {
+      width: 60px;
+      height: 60px;
+      border-radius: $radiusOne;
+      overflow: hidden;
+    }
+    &__title {
+      font-size: 20px;
+    }
+    &__type {
+      color: $grayTwo;
+      font-size: 16px;
+    }
+    &__list {
+      @include grid(2);
+    }
+    &__actions {
+      & .upload-btn {
+        background: rgba(226, 103, 48, 0.05);
+        height: 45px;
+        width: 45px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.single-news__content {
+  & .content {
+    &__date {
+      font-size: 12px;
+      color: $grayTwo;
+    }
+    &__title {
+      font-size: 38px;
+      @include down(md) {
+        font-size: 24px;
+      }
+    }
+    &__subtitle {
+      font-size: 18px;
+      @include down(md) {
+        font-size: 14px;
+      }
+    }
+    &__img {
+      aspect-ratio: 1041 / 481;
+    }
+  }
+}

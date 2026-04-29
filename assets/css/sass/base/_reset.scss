@@ -167,7 +167,7 @@ img {
 .content__description {
   text-align: justify;
   font-size: 14px;
-  color: $grayOne;
+  color: $textColor;
   &.dark {
     color: rgba(255, 255, 255, 0.8);
   }
@@ -176,7 +176,7 @@ img {
   & .list__item {
     @include flex(flex-start);
     gap: 10px;
-    font-size: 16px;
+    font-size: 14px;
     text-align: justify;
     &::before {
       content: "";
@@ -393,4 +393,69 @@ img {
 }
 #content {
   padding-block-end: 40px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+.form {
+  &-label {
+    color: $textColor;
+    text-transform: capitalize;
+  }
+  &-input {
+    border-radius: $radiusBase;
+    border: 1px solid #e1e2e3;
+    padding: 16px 12px;
+    height: 46px;
+    -webkit-text-fill-color: $grayTwo;
+    color: $grayTwo;
+    font-size: 12px;
+    transition: border-color 0.3s ease;
+    &:focus {
+      border-color: $primaryColor;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
+
+textarea {
+  &.form-input {
+    height: auto;
+  }
+}
+
+.custom-select {
+  border-radius: $radiusBase !important;
+  border: 1px solid #e1e2e3;
+  min-height: 46px;
+  -webkit-text-fill-color: $grayTwo;
+  color: $grayTwo;
+  font-size: 12px;
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+.ss-main .ss-values .ss-placeholder {
+  padding: 2px 12px;
+}
+.ss-content .ss-list .ss-option {
+  padding: 5px 12px;
+}
+.ss-main .ss-arrow {
+  width: 24px;
+}
+.ss-content .ss-list .ss-option:hover,
+.ss-content .ss-list .ss-option.ss-selected,
+.ss-content .ss-list .ss-option:not(.ss-disabled).ss-selected {
+  background-color: $primaryColor;
+  -webkit-text-fill-color: $white;
+  color: $white;
+}
+.ss-main .ss-values .ss-value {
+  background-color: $primaryColor;
+  -webkit-text-fill-color: $white;
+  color: $white;
 }

@@ -1,0 +1,38 @@
+.pagination-content {
+  & .page {
+    &-item {
+      &.active {
+        & .page-link {
+          background-color: $primaryColor;
+          border-color: $primaryColor;
+          color: $white;
+        }
+      }
+      & .page-link {
+        width: 40px;
+        height: 40px;
+        @include flex(center, center);
+        border-radius: $radiusOne;
+        color: $grayTwo;
+        border: none;
+        box-shadow: none;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        @include down(md) {
+          width: 30px;
+          height: 30px;
+          font-size: 14px;
+        }
+        &.to-prev,
+        &.to-next,
+        &.first-page,
+        &.last-page {
+          font-size: 20px;
+          @include down(md) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -21,7 +21,7 @@
     &__title {
       margin-bottom: 12px;
       &-link {
-        color: $grayOne;
+        color: $textColor;
         font-size: 18px;
         @include line-clamp;
         &:hover {

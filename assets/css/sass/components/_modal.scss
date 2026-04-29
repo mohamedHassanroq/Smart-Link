@@ -1,0 +1,33 @@
+.modal {
+  &-header {
+    padding: 20px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  &-close {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(102, 112, 133, 0.05);
+    &:hover {
+      background-color: rgba(243, 15, 7, 0.8);
+      color: $white;
+    }
+  }
+  &-title {
+    font-size: 18px;
+  }
+  &-body {
+    padding: 20px;
+  }
+  &-footer {
+    padding: 20px;
+  }
+  &-cancel {
+    height: 45px;
+    min-width: 130px;
+    background-color: rgba(102, 112, 133, 0.05);
+    &:hover {
+      background-color: rgba(243, 15, 7, 0.8);
+      color: $white;
+    }
+  }
+}

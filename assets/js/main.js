@@ -36,4 +36,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.Fancybox) {
     Fancybox.bind("[data-fancybox]", {});
   }
+  // Initialize main select
+  document.querySelectorAll(".custom-select").forEach((select) => {
+    new SlimSelect({
+      select: select,
+      settings: {
+        showSearch: false,
+      },
+    });
+  });
 });
